@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohith K | Portfolio</title>
     <meta name="description" content="Portfolio of Rohith K, a mechanical engineering student at IIT Bhubaneswar.">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
 
     <nav id="navbar">
         <div class="nav-content">
@@ -28,33 +32,37 @@
 
     <section id="home" class="hero hidden">
         <div class="hero-content">
-            <p class="subtitle">Hi, my name is</p>
-            <h1 class="title">Rohith K.</h1>
-            <h2 class="title-secondary">I build things & learn mechanics.</h2>
+            <h1 class="title">ROHITH K.</h1>
+            <h2 class="title-secondary">ENGINEERING & DEVELOPMENT</h2>
             <p class="description">
-                I am a Mechanical Engineering student at IIT Bhubaneswar (2025-29 batch). 
+                I am a Mechanical Engineering student at IIT Bhubaneswar (2025-29 batch).
                 I enjoy developing software with vibe coding and I'm currently expanding my engineering toolkit.
             </p>
-            <a href="#projects" class="btn">Check out my work</a>
+            <a href="#projects" class="btn btn-primary">Check out my work</a>
         </div>
     </section>
 
     <section id="about" class="section hidden">
         <div class="section-content">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">ABOUT ME</h2>
             <div class="about-grid">
-                <div class="about-text">
-                    <p>Hello! My name is Rohith K and I am currently pursuing my B.Tech in Mechanical Engineering at IIT Bhubaneswar (Batch of 2025-29).</p>
-                    <p>My interest lies in both software development and core engineering. I enjoy developing software using vibe coding, and I'm looking forward to diving deep into SolidWorks and Ansys this upcoming summer vacation to further my mechanical engineering skills.</p>
-                    <p>Here are a few technologies and tools I've been working with or learning recently:</p>
-                    <ul class="skills-list">
-                        <li>React Native</li>
-                        <li>Flask</li>
-                        <li>SolidWorks (Learning)</li>
-                        <li>Ansys (Learning)</li>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                    </ul>
+                <div class="card about-card">
+                    <p>Hello! My name is Rohith K and I am currently pursuing my B.Tech in Mechanical Engineering at IIT
+                        Bhubaneswar (Batch of 2025-29).</p>
+                    <p>My interest lies in both software development and core engineering. I enjoy developing software
+                        using vibe coding, and I'm looking forward to diving deep into SolidWorks and Ansys this
+                        upcoming summer vacation to further my mechanical engineering skills.</p>
+                    <div class="skills-container">
+                        <h3 class="skills-title">Core Technologies</h3>
+                        <ul class="skills-list">
+                            <li>React Native</li>
+                            <li>Flask</li>
+                            <li>SolidWorks (Learning)</li>
+                            <li>Ansys (Learning)</li>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,24 +70,29 @@
 
     <section id="projects" class="section hidden">
         <div class="section-content">
-            <h2 class="section-title">Some Things I've Built</h2>
+            <h2 class="section-title">PROJECTS</h2>
             <div class="projects-grid">
-                
-                <div class="project-card">
+
+                <div class="card project-card">
                     <div class="project-content">
                         <div class="project-top">
-                            <i class="fa-regular fa-folder project-icon"></i>
+                            <i class="fa-solid fa-microchip project-icon"></i>
                             <div class="project-links">
-                                <a href="https://github.com/Rohith875/Quick-Attend" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/Rohith875/Quick-Attend" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
                             </div>
                         </div>
                         <h3 class="project-title">QuickAttend</h3>
-                        <p class="project-desc">A highly secure, location-aware, and real-time attendance tracking system. It uses a multi-layered security approach including Rotating Encrypted QR Codes, WiFi BSSID Validation, and Biometric Authentication to eliminate proxy attendance.</p>
+                        <p class="project-desc">A highly secure, location-aware, and real-time attendance tracking
+                            system. It uses a multi-layered security approach including Rotating Encrypted QR Codes,
+                            WiFi BSSID Validation, and Biometric Authentication to eliminate proxy attendance.</p>
                         <ul class="project-tech">
                             <li>React Native</li>
                             <li>Flask</li>
                             <li>Firebase</li>
                         </ul>
+                        <a href="https://github.com/Rohith875/Quick-Attend" target="_blank"
+                            class="btn btn-secondary mt-4">View Source</a>
                     </div>
                 </div>
 
@@ -88,21 +101,25 @@
     </section>
 
     <section id="contact" class="section contact-section hidden">
-        <div class="section-content text-center">
-            <h2 class="section-title center">Get In Touch</h2>
-            <p class="contact-desc">My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-            <a href="https://www.linkedin.com/in/rohith-k-91370625a/" class="btn" target="_blank">Say Hello</a>
+        <div class="section-content text-center card contact-card">
+            <h2 class="section-title center">GET IN TOUCH</h2>
+            <p class="contact-desc">My inbox is always open. Whether you have a question or just want to say hi, I'll
+                try my best to get back to you!</p>
+            <a href="https://www.linkedin.com/in/rohith-k-91370625a/" class="btn btn-primary" target="_blank">Say
+                Hello</a>
         </div>
     </section>
 
     <footer>
         <div class="social-links">
             <a href="https://github.com/Rohith875" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/rohith-k-91370625a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/rohith-k-91370625a/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
         </div>
         <p>Designed & Built by Rohith K</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
