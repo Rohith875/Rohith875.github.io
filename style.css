@@ -51,6 +51,7 @@ a:hover {
 
 .btn:hover {
     background-color: rgba(56, 189, 248, 0.1);
+    transform: translateY(-2px);
 }
 
 /* --- Layout Utility --- */
@@ -92,7 +93,7 @@ a:hover {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(15, 23, 42, 0.9);
+    background-color: rgba(15, 23, 42, 0.85);
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: var(--transition);
@@ -135,6 +136,13 @@ a:hover {
     color: var(--accent-color);
 }
 
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: var(--text-main);
+    cursor: pointer;
+}
+
 /* --- Hero Section --- */
 .hero {
     min-height: 100vh;
@@ -163,7 +171,7 @@ a:hover {
 }
 
 .hero .title-secondary {
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(30px, 6vw, 60px);
     font-weight: 700;
     line-height: 1.1;
     color: var(--text-muted);
@@ -219,6 +227,7 @@ a:hover {
 
 .project-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
 }
 
 .project-top {
@@ -295,12 +304,50 @@ footer {
 
 .social-links a:hover {
     color: var(--accent-color);
+    transform: translateY(-3px);
+    display: inline-block;
+}
+
+/* --- Scroll Animations --- */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* --- Responsive Design --- */
 @media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
     .nav-links {
-        display: none; /* Hide standard nav on mobile (implement a hamburger menu later if needed) */
+        position: fixed;
+        right: -100%;
+        top: 0;
+        height: 100vh;
+        width: 250px;
+        background-color: var(--surface-color);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s ease-in-out;
+        box-shadow: -10px 0 30px -15px rgba(2,12,27,0.7);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        margin: 20px 0;
+        display: block;
     }
     
     .section-title::after {
